@@ -63,6 +63,28 @@ apt-get -y install nano
 apt-get -y install git
 
 # ------------------------------------------------------------------------------
+# Java
+# ------------------------------------------------------------------------------
+
+apt-get install -y default-jre
+
+# ------------------------------------------------------------------------------
+# Unzip
+# ------------------------------------------------------------------------------
+
+apt-get -y install unzip
+
+# ------------------------------------------------------------------------------
+# SymmetricDS
+# ------------------------------------------------------------------------------
+
+cd ~/
+wget --output-document=symmetric.zip https://sourceforge.net/projects/symmetricds/files/symmetricds/symmetricds-3.7/symmetric-server-3.7.36.zip/download
+unzip symmetric.zip
+mv symmetric-server-3.7.36 symmetric-server
+mv symmetric-server/ /usr/local/bin/
+
+# ------------------------------------------------------------------------------
 # Clean up
 # ------------------------------------------------------------------------------
 rm -rf /provision

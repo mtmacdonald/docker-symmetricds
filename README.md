@@ -16,6 +16,7 @@ These packages are preinstalled:
 - nano
 - curl
 - python (\*dependency for supervisord)
+- default-jre (\*dependency for symmetricds)
 
 Running a container
 -------------------
@@ -27,7 +28,7 @@ Running a container
 **2.** Run the Docker image as a new Docker container:
 
 	docker run -d \
-	-p 80:80 -p 443:443 -p 3306:3306 \
+	-p 31416:31416 -p 3306:3306 \
 	-v /home/app:/share \
 	--restart=always \
 	--name=appname \
