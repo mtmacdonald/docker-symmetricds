@@ -91,9 +91,10 @@ apt-get -y install python3-pymysql
 # ------------------------------------------------------------------------------
 
 cd ~/
-wget --output-document=symmetric.zip https://sourceforge.net/projects/symmetricds/files/symmetricds/symmetricds-3.7/symmetric-server-3.7.36.zip/download
+
+wget --output-document=symmetric.zip https://sourceforge.net/projects/symmetricds/files/symmetricds/symmetricds-3.8/symmetric-server-3.8.3.zip/download
 unzip symmetric.zip
-mv symmetric-server-3.7.36 symmetric-server
+mv symmetric-server-3.8.3 symmetric-server
 mv symmetric-server/ /usr/local/bin/
 
 # ------------------------------------------------------------------------------
